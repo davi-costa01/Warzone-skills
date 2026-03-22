@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    line-height: 24px;
+}
+
+header h1,
+h2 {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+}
+
+header  nav li a{
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+}
+
+header{
+    background-color: #313030;
+    padding: 16px 0;
+    color: #ecf0f1;
+}
+
+header h1 {
+    font-size: 50px;
+    margin-left: -200px;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 24px;
+
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container img {
+    height: 500px;
+    margin-left: -350px;
+    margin-top: -200px;
+}
+
+body{
+    background-color: rgb(27, 26, 26);
+}
+
+h2 {
+    margin-left: 1000px;
+    transform: translateY(100px);
+    font-size: 30px;
+    color: #ecf0f1;
+}
+
+p {
+    margin-left: 1000px;
+    transform: translateY(120px);
+    color: #ecf0f1;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    bottom: 770px;
+    right: 10px;
+}
+
+.card {
+    transition: transform 0.5s ease;
+}
+
+.card:hover {
+    transform: scale(1.10);
+}
+
+.card {
+    padding: 20px 30px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hero {
+    height: 500px;
+    background:
+        linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.2)),
+        url("img/warzone.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    color: #fff;
+    margin-left: -5px;
+}
+
+.hero {
+    transition: transform 0.5s ease;
+}
+
+.hero:hover {
+    transform: scale(1.02);
+}
+
+.hero {
+    max-width: 1920px;
+    width: 100%;
+}
+
+.hero-content p {
+    color: #ccc;
+    margin: 15px 0;
+    transform: translateY(-2px);
+}
+
+.btn {
+    padding: 12px 25px;
+    background: #7c4dff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.hero-content {
+    animation: fadeSlide 1s ease forwards;
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hero-content,
+.container ul li{
+    text-shadow: 0 0 10px rgba(124,77,255,0.6);}
